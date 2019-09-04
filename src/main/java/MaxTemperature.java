@@ -8,7 +8,6 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import reducer.MaxTemperatureReducer;
 
-import java.io.IOException;
 
 public class MaxTemperature{
 
@@ -25,6 +24,7 @@ public class MaxTemperature{
         job.setJarByClass(MaxTemperature.class);
         //设置map类
         job.setMapperClass(MaxTemperatureMapper.class);
+        //设置combiner类
         job.setCombinerClass(MaxTemperatureReducer.class);
         //设置reduce类
         job.setReducerClass(MaxTemperatureReducer.class);
