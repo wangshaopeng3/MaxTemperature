@@ -16,7 +16,7 @@
     </repositories>
 
     <properties>
-        <hadoop.version>2.6.0-cdh5.11.2</hadoop.version>
+        <hadoop.version>2.7.0</hadoop.version>
     </properties>
 
     <dependencies>
